@@ -16,6 +16,8 @@
     <link href="css/prettyPhoto.css" media="screen" rel="stylesheet">
     <!--FontAwesome-->
     <link href="css/font-awesome.css" media="screen" rel="stylesheet">
+    <!--DateTime Picker-->
+    <link href="css/jquery.datetimepicker.css" media="screen" rel="stylesheet">
     <!-- Mobile menu (mmenu) -->
     <link rel="stylesheet" href="css/jquery.mmenu.all.css"/>
     <!-- Style CSS -->
@@ -32,19 +34,13 @@
     <div class="line4"></div>
 </div>
 <!--/ Loading Spinner -->
-<div id="page" class="hfeed site invisible">
-    <!--Header  (fly-sticky-header-on)-->
+<div id="page" class="hfeed site invisible">    <!--Header  (fly-sticky-header-on)-->
     <header class="fly-header-site fly-header-type-1 fly-sticky-header-on">
         <div class="fly-nav-wrap fly-nav-left">
             <nav class="fly-site-navigation primary-navigation" id="fly-menu-primary">
                 <ul class="fly-nav-menu">
-                    <li><a href="./">HOME</a>
-                        <ul>
-                            <li><a href="index.html">HOME PAGE 1</a></li>
-                            <li><a href="index2.html">HOME PAGE 2</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="story.html">STORY</a></li>
+                    <li><a href="./">HOME</a></li>
+                    <li class="current-menu-item"><a href="story.html">STORY</a></li>
                     <li><a href="menu.html">MENU</a></li>
                     <li><a href="reservation.html">RESERVATION</a></li>
                 </ul>
@@ -57,75 +53,49 @@
                     <li><a href="offers.html">OFFERS</a></li>
                     <li><a href="news.html">NEWS</a></li>
                     <li><a href="photo.html">PHOTO</a></li>
-                    <li class="current-menu-item"><a href="contact.html">CONTACT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div id="main" class="site-main" role="main">        <!--Header Section-->
-        <section class="fly-section-image fly-header-image fly-section-overlay fly-section-height-md parallax"
-                 style="background-image: url('images/Contact/contact-header-bg.jpg')">
+    <div id="main" class="site-main" role="main">
+        <!--Header Image-->
+        <section class="fly-section-image fly-header-image fly-section-overlay fly-section-height-md parallax" style="background-image: url('images/Story/header-bg.jpg')">
             <div class="container">
-                <div class="row"><h3 class="fly-section-image-title-before">Say hello</h3>
-
-                    <h2 class="fly-section-image-title-after">CONTACT</h2></div>
-            </div>
-        </section>
-        <!--End Header Section-->
-        <!--Contact Form Wrap-->
-        <div class="fly-divider-space space-md" style="height: 70px;"></div>
-        <section class="fly-wrap-contact-form container-min">
-            <div class="container">
-                <div class="row"><h2 class="fly-contact-form-info-title">We’d Love to hear<br>from you</h2>
-
-                    <div class="fly-contact-form-title-divider"></div>
-                    <div class="fly-contact-form-info-block"><p class="fly-contact-street"> Moi South Lake Road - Naivasha - Kenya </p>
-
-                        <p class="fly-contact-phone"> Phone. +254 721 161905</p>
-
-                        <p class="fly-contact-email"><a href="mailto:info@hippopoint.co.ke">info@hippopoint.co.ke</a></p>
-
-                        <div class="fly-contact-work-program"><h4>WE ARE OPEN FOR YOU</h4>
-
-                            <p>Monday to Friday 2 pm - 11 pm</p>
-
-                            <p>Saturday and Sunday 1 pm - 12 pm</p></div>
-                    </div>
-                    <!--Contact Form-->
-                    <div class="fly-contact-form"><h3 class="fly-contact-title">Fill out the form below. We will contact
-                        you soon.</h3>
-
-                        <!--for redirect in a new page change : 'action="#"' with : 'action="sendmail.php"'-->
-                        <form action="#" class="fly-form-contact" method="post">
-                            <div class="field-text">
-                                <input type="text" name="name" id="name" placeholder="Name">
-                            </div>
-                            <div class="field-text">
-                                <input type="text" name="last-name" id="last-name" placeholder="Last Name">
-                            </div>
-                            <div class="field-text"><input type="text" name="phone" id="phone" placeholder="Phone">
-                            </div>
-                            <div class="field-text"><input type="email" name="email" id="email" placeholder="Email">
-                            </div>
-                            <div class="field-text"><textarea name="message" id="message"
-                                                              placeholder="Message"></textarea></div>
-                            <div class="field-submit"><input type="submit" value="Submit"></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="fly-divider-space space-md"></div>
-        <!--End Contact Form Wrap-->
-        <!--Google Maps-->
-        <section class="google-maps">
-            <div class="container-fluid">
                 <div class="row">
-                    <div id="map"></div>
+                    <h3 class="fly-section-image-title-before">Our</h3>
+                    <h2 class="fly-section-image-title-after">STORY</h2>
                 </div>
             </div>
         </section>
-        <!--End Google Maps-->
+        <!--End Header Image-->
+        <!--Section Story-->
+        <section class="fly-story-box container-min fly-theme-color-4">
+            <div class="container">
+                <div class="row">
+                    <div class="fly-divider-space space-md" style="height: 145px;"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="fly-story-box-header"><h3 class="fly-story-box-title">OUR STORY</h3>
+
+                            <div class="fly-story-box-divider"></div>
+                        </div>
+                        <div class="fly-story-box-content"> A charming neighbourhood bar and restaurant and bar, located at the
+                            heart of Naivasha; a true gateway to gourmet farm-to-table dining, inspired by seasonal
+                            produce and the province's local suppliers.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="fly-divider-space space-md" style="height: 145px;"></div>
+                </div>
+            </div>
+        </section>
+        <!--End Section Story-->
+        <!--Section Image-->
+        <section class="fly-section-image fly-section-height-sm" style="background-image: url('images/Story/image-1.jpg')"></section>
+        <!--End Section Image-->
         <!--Section Go To Top-->
         <section class="fly-go-to-top fly-theme-color-4">
             <div class="row">
@@ -158,9 +128,71 @@
             </div>
         </section>
         <!-- End Section quick nav -->
+        <!--Reservation Form in HomePage -->
+        <section class="fly-wrap-home-reservation-form fly-wrap-reservation-form fly-form-light-style container-min" style="background-image: url(images/Reservation/reservation-bg.jpg)">
+            <div class="container">
+                <div class="fly-divider-space space-sm"></div>
+                <div class="row">
+                    <i class="fly-form-icon-title flyicon-calendar"></i>
+                    <h4 class="fly-reservation-form-before-info-title">TELL US</h4>
+                    <h2 class="fly-reservation-form-info-title">WHEN YOU WANT TO VISIT US</h2>
+                    <div class="fly-reservation-form-title-divider"></div>
+                    <div class="fly-reservation-form-info-block">
+                        <p class="fly-reservation-info">
+                            Fill in here to reserve a table
+                        </p>
+                    </div>
+                    <!--Contact Form-->
+                    <div class="fly-reservation-form">
+                        <form action="send-reservation.php" class="fly-form-reservation" method="post">
+                            <!-- Col Left-->
+                            <div class="fly-form-col-left">
+                                <div class="fly-form-inner-col-left">
+                                    <div class="field-text">
+                                        <input type="text" name="date" id="reservation-date" placeholder="Date">
+                                    </div>
+                                </div>
+                                <div class="fly-form-inner-col-right">
+                                    <div class="field-text">
+                                        <input type="text" name="persone" id="persone" placeholder="Pers">
+                                    </div>
+                                </div>
+                                <div class="field-text">
+                                    <input type="text" name="phone" id="phone" placeholder="Phone">
+                                </div>
+                            </div>
+                            <!--Col Right-->
+                            <div class="fly-form-col-right">
+                                <div class="fly-form-inner-col-left">
+                                    <div class="field-text">
+                                        <input type="text" name="time" id="reservation-time" placeholder="Time">
+                                    </div>
+                                </div>
+                                <div class="fly-form-inner-col-right">
+                                    <div class="field-text">
+                                        <input type="text" name="name" id="name" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="field-text">
+                                    <input type="email" name="email" id="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="field-text">
+                                <textarea name="notice" id="notice" placeholder="Notice"></textarea>
+                            </div>
+                            <div class="field-submit">
+                                <input type="submit" value="Book!">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="fly-divider-space space-sm"></div>
+            </div>
+        </section>
+        <!-- End Reservation Form in HomePage -->
     </div>
     <!--Footer-->
-    <footer class="fly-site-footer">
+ <footer class="fly-site-footer">
         <div class="container">
             <div class="row">
                 <div class="fly-divider-space space-sm"></div>
@@ -169,7 +201,7 @@
                 <div class="fly-footer-content clearfix">
                     <a class="fly-footer-logo" href="./"> <img src="images/logo.png" alt="Footer Logo"/> </a>
 
-                    <div class="fly-footer-info"> Hippo Point <br> moi southlake Road - naivasha - phone
+                    <div class="fly-footer-info">Hippo Point <br> moi southlake Road - naivasha - phone
                         <a href="callto:254 721 161905">+254 721 161905</a>
                     </div>
                     <div class="fly-social">
@@ -208,10 +240,10 @@
 <script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
 <!--Categories Slider-->
 <script src="js/jquery.prettyPhoto.js"></script>
+<!-- DateTime Picker -->
+<script src="js/jquery.datetimepicker.js"></script>
 <!-- Scroll To Top Button -->
 <script src="js/scrollTo.min.js"></script>
-<!-- gMap -->
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <!-- Parallax -->
 <script src="js/jquery.parallax-1.1.3.js"></script>
 <!-- Mobile menu (mmenu) -->
