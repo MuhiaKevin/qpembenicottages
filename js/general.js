@@ -268,7 +268,7 @@ jQuery(document).ready(function() {
 
     // Google Maps (Initialise & Customise)
     function init() {
-        var myLatLong = new google.maps.LatLng(51.590814, 0.0339111);  // Set coordinates for map
+        var myLatLong = new google.maps.LatLng(-0.8294075349263935, 36.3435877288349);  // Set coordinates for map
         var mapOptions = {                                             // Map Option & Styling
             zoom: 14,
             center: myLatLong,
@@ -383,13 +383,13 @@ jQuery(document).ready(function() {
         var marker = new google.maps.Marker({                                       // Create and set the marker
             position: myLatLong,
             map: map,
-            title: 'Restaurant FlyCoffee',
+            title: 'Hippo Point',
             popup: true,
             icon: image_marker
         });
-        var contentString =  '<div class="map-popup-info-wrap"><strong>Restaurant FlyCoffee</strong><br><span>' +   // Create html content for popup info
-            '49 Chigwell Road  - South Woodford, London E18 1NG - United Kingdom' +
-            '<br>Tel.: (020) 8989 3831 </span></div>';
+        var contentString =  '<div class="map-popup-info-wrap"><strong>Hippo Point</strong><br><span>' +   // Create html content for popup info
+            'moi southlake Road - naivasha - phone' +
+            '<br>Tel.: (+254) 721 161905 </span></div>';
 
         var infowindow = new google.maps.InfoWindow({                               // Get content to map
             content: contentString
