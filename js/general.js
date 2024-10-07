@@ -383,11 +383,11 @@ jQuery(document).ready(function() {
         var marker = new google.maps.Marker({                                       // Create and set the marker
             position: myLatLong,
             map: map,
-            title: 'Hippo Point',
+            title: 'Q-Pembeni',
             popup: true,
             icon: image_marker
         });
-        var contentString =  '<div class="map-popup-info-wrap"><strong>Hippo Point</strong><br><span>' +   // Create html content for popup info
+        var contentString =  '<div class="map-popup-info-wrap"><strong>Q-Pembeni</strong><br><span>' +   // Create html content for popup info
             'moi southlake Road - naivasha - phone' +
             '<br>Tel.: (+254) 721 161905 </span></div>';
 
