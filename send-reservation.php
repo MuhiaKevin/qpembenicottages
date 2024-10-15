@@ -1,8 +1,8 @@
 <?php
 
 // Change this with your blog name and email address
-$the_blogname = 'Your blog name';
-$the_myemail  = 'email@company.com';
+$the_blogname = 'Q-Pembeni';
+$the_myemail  = 'archerkreiger@gmail.com';
 
 if ( isset( $_POST['email'] ) ) {
 	error_reporting( 0 );

@@ -120,7 +120,7 @@ jQuery(document).ready(function() {
         $.ajax({
             type: "POST",
             cache: false,
-            url: "ajax_send_reservation.php",
+            url: "http://localhost:3000/ajax_send_reservation.php",
             data: data,    // multiple data sent using ajax
             success: function (html) {
                 console.log('success send RF');
